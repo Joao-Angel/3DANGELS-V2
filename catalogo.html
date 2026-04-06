@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Catálogo | 3D Angels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Catálogo de produtos 3D Angels — utilidades e decoração geek impressos em 3D. Indaiatuba e região.">
+<meta name="theme-color" content="#0e6380">
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+<header>
+    <nav>
+        <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+            <img src="img/logo.png" alt="Logo 3D Angels" class="logo-img">
+            <span class="logo-text">3D ANGELS</span>
+        </div>
+        <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir ou fechar o menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html" class="active">Catálogo</a></li>
+            <li><a href="index.html#como-funciona">Como funciona</a></li>
+            <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="catalogo" id="main-content">
+
+<h2 class="section-title">Catálogo de Produtos</h2>
+
+<div class="catalogo-tabs">
+    <button class="tab-btn active" onclick="trocarCategoria('utilidades', event)">Utilidades</button>
+    <button class="tab-btn" onclick="trocarCategoria('decoracao', event)">Decoração / Geek</button>
+</div>
+
+<div class="catalogo-grid">
+
+    <!-- UTILIDADES -->
+    <div class="categoria active" id="utilidades">
+        <div class="produto">
+            <img src="img/catalogo/SuporteCelular.png">
+            <h3>Suporte para Celular</h3>
+            <p>Ideal para mesa ou escritório.</p>
+            <div class="produto-preco">R$ 19,90</div>
+            <button onclick="pedirProduto('Suporte para Celular - R$19,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/OrganizadorDeFios.png">
+            <h3>Organizador de Cabos</h3>
+            <p>Organize seus cabos com facilidade.</p>
+            <div class="produto-preco">R$ 9,90</div>
+            <button onclick="pedirProduto('Organizador de Cabos - R$9,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/SuporteControle.png">
+            <h3>Suporte para Controle</h3>
+            <p>Ideal para controles de videogame.</p>
+            <div class="produto-preco">R$ 35,90</div>
+            <button onclick="pedirProduto('Suporte para Controle - R$35,90')">Pedir no WhatsApp</button>
+        </div>
+         <div class ="produto">
+            <img src="img/catalogo/PORTA_CANETA.jpeg">
+            <h3>Porta Canetas</h3>
+            <p>Organize seu espaço de trabalho.</p>
+            <div class="produto-preco">R$ 29,90</div>
+            <button onclick="pedirProduto('Porta Canetas - R$29,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class ="produto">
+            <div class="badge"> Promoção </div>
+            <img src="img/catalogo/BANDEJA_BOLHA.jpeg">
+            <h3>Bandeja Bolha</h3>
+            <p>Organize pequenos objetos com estilo.</p>
+            <div class="produto-preco promocao-preco">
+                <span class="preco-antigo">R$ 22,90</span>
+                <span class="preco-atual">R$ 17,90</span>
+            </div>
+            <button onclick="pedirProduto('Bandeja Bolha - R$17,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class ="produto">
+            <img src = "img/catalogo/BANDEJA_FLOR.jpeg">
+            <h3>Bandeja Flor</h3>
+            <p>Organize pequenos objetos com estilo.</p>
+            <div class="produto-preco">R$ 18,99</div>
+            <button onclick="pedirProduto('Bandeja Flor - R$18,99')">Pedir no WhatsApp</button>
+        </div>
+        <div class ="produto">
+            <img src = "img/catalogo/SUPORTE_CONTROLE2.jpeg">
+            <h3>Suporte para Controle Minimalista</h3>
+            <p>Ideal para controles de videogame.</p>
+            <div class="produto-preco">R$ 8,90</div>
+            <button onclick="pedirProduto('Suporte para Controle Minimalista - R$8,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class = "produto">
+            <img src = "img/catalogo/SUPORTE_TOALHAS.jpeg">
+            <h3>Suporte para Toalhas</h3>
+            <p>Ideal para armários e banheiros.</p>
+            <div class="produto-preco">R$ 9,99</div>
+            <button onclick="pedirProduto('Suporte para Toalhas - R$9,99')">Pedir no WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- DECORAÇÃO -->
+    <div class="categoria" id="decoracao">
+        <div class="produto">
+            <div class="badge"> Mais vendido</div>
+            <img src="img/catalogo/PORSHE_QUADRO.jpeg">
+            <h3>Quadro Porsche</h3>
+            <p>Decoração perfeita para amantes de carros.</p>
+            <div class="produto-preco">R$ 15,90</div>
+            <button onclick="pedirProduto('Quadro Porsche - R$15,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/ELPRIMO.jpeg">
+            <h3>Boneco El Primo</h3>
+            <p>Perfeito para fãs de Brawl Stars.</p>
+            <div class="produto-preco">R$ 49,90</div>
+            <button onclick="pedirProduto('Boneco El Primo - R$49,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/DRAGAO_ARTICULADO.jpeg">
+            <h3>Dragão Articulado</h3>
+            <p>Ótimo presente decorativo.</p>
+            <div class="produto-preco">R$ 20,90</div>
+            <button onclick="pedirProduto('Dragão Articulado - R$20,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/MAE_E_FILHO.jpeg">
+            <h3>Mãe e Filho</h3>
+            <p>Presente especial e cheio de significado.</p>
+            <div class="produto-preco">R$ 24,90</div>
+            <button onclick="pedirProduto('Mãe e Filho - R$24,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/CAVEIRA_DECO.jpeg">
+            <h3>Caveira Decorativa</h3>
+            <p>Ideal para setups e decoração moderna.</p>
+            <div class="produto-preco">R$ 27,90</div>
+            <button onclick="pedirProduto('Caveira Decorativa - R$27,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class="produto">
+            <img src="img/catalogo/TE_AMO_DECO.jpeg">
+            <h3>Decoração "Te Amo"</h3>
+            <p>Mostre seu amor com estilo.</p>
+            <div class="produto-preco">R$ 15,90</div>
+            <button onclick="pedirProduto('Te Amo Decorativo - R$15,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class ="produto">
+            <img src="img/catalogo/VASO_BONECO.jpeg">
+            <h3>Vaso Boneco</h3>
+            <p>Decore com um toque divertido.</p>
+            <div class="produto-preco">R$ 19,90</div>
+            <button onclick="pedirProduto('Vaso Boneco - R$19,90')">Pedir no WhatsApp</button>
+        </div>
+        <div class = "produto">
+            <img src="img/catalogo/DOG_CHAVEIRO.jpeg">
+            <h3>Chaveiro Cachorro personalizado</h3>
+            <p>Chaveiro personalizado do seu pet.</p>
+            <div class="produto-preco">R$ 25,90</div>
+            <button onclick="pedirProduto('Chaveiro Cachorro - R$25,90')">Pedir no WhatsApp</button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <strong>3D ANGELS</strong>
+            <span>Impressão 3D em Indaiatuba e região</span>
+        </div>
+        <nav class="footer-nav" aria-label="Links do rodapé">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="index.html#como-funciona">Como funciona</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="index.html#contact">Contato</a>
+        </nav>
+        <div class="footer-social">
+            <a href="https://wa.me/5519991946309" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/3dangels_" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="mailto:angels3dstore@gmail.com">E-mail</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 3D ANGELS. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="Voltar ao topo" aria-hidden="true" tabindex="-1"><span aria-hidden="true">↑</span></a>
+
+<script src="js/back-to-top.js"></script>
+<script src="js/catalogo.js"></script>
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById('navLinks');
+        var btn = document.querySelector('.menu-toggle');
+        navLinks.classList.toggle('active');
+        if (btn) btn.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+    }
+</script>
+
+</body>
+</html>
