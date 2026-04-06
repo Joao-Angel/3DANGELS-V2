@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicite um Orçamento | 3D Angels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicite orçamento de impressão 3D com a 3D Angels — Indaiatuba e região. Envie detalhes da peça e receba retorno rápido.">
+    <meta name="theme-color" content="#0e6380">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+<header>
+    <nav>
+        <div class="logo-container" onclick="window.location.href='index.html'" style="cursor:pointer;">
+            <img src="img/logo.png" alt="Logo 3D Angels" class="logo-img">
+            <span class="logo-text">3D ANGELS</span>
+        </div>
+        <button type="button" class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir ou fechar o menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="index.html#como-funciona">Como funciona</a></li>
+            <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="orcamento.html" class="active">Orçamento</a></li>
+            <li><a href="index.html#about">Sobre</a></li>
+            <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="orcamento" id="main-content">
+    <h2 class="section-title">Solicitar Orçamento</h2>
+
+    <!-- DICAS (aparece acima do form no mobile) -->
+    <div class="orcamento-dicas">
+        <div class="dica-bloco">
+            <h4>Dicas para seu orçamento</h4>
+            <ul>
+                <li>✔ Informe as dimensões desejadas</li>
+                <li>✔ Descreva a finalidade da peça</li>
+                <li>✔ Envie o arquivo 3D se tiver</li>
+                <li>✔ Indique a quantidade</li>
+            </ul>
+        </div>
+        <div class="dica-bloco">
+            <h4>Materiais disponíveis</h4>
+            <div class="materiais-grid">
+                <span><strong>PLA</strong> – Uso geral</span>
+                <span><strong>PETG</strong> – Durável</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <form class="orcamento-form"
+        id="formOrcamento"
+        action="https://formsubmit.co/angels3dstore@gmail.com"
+        method="POST"
+    >
+        <input type="hidden" name="_subject" value="Novo Orçamento - 3D Angels">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-group">
+            <label>Nome Completo </label>
+            <input id="nome" name="Nome" type="text" required placeholder="Seu nome completo">
+        </div>
+
+        <div class="form-group">
+            <label>Email </label>
+            <input id="email" name="Email" type="email" required placeholder="seu@email.com">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Telefone</label>
+                <input id="telefone" name="Telefone" type="tel" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+                <label>Quantidade</label>
+                <input id="quantidade" name="Quantidade" type="number" value="1" min="1">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Material Preferido</label>
+            <select id="material" name="Material">
+                <option>Selecione o material</option>
+                <option>PLA</option>
+                <option>PETG</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Descrição do Projeto *</label>
+            <textarea id="descricao" name="Descricao" required placeholder="Descreva dimensões, finalidade, cor, etc."></textarea>
+        </div>
+
+        <p class="whatsapp-helper">Preencha o formulário e clique para enviar direto no WhatsApp.</p>
+
+        <button type="button" class="cta-button full" id="btnEnviar">
+             Enviar Solicitação
+        </button>
+    </form>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <strong>3D ANGELS</strong>
+            <span>Impressão 3D em Indaiatuba e região</span>
+        </div>
+        <nav class="footer-nav" aria-label="Links do rodapé">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="index.html#como-funciona">Como funciona</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="index.html#contact">Contato</a>
+        </nav>
+        <div class="footer-social">
+            <a href="https://wa.me/5519991946309" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/3dangels_" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="mailto:angels3dstore@gmail.com">E-mail</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 3D ANGELS. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top" aria-label="Voltar ao topo" aria-hidden="true" tabindex="-1"><span aria-hidden="true">↑</span></a>
+
+<script src="js/back-to-top.js"></script>
+<script src="js/orcamento.js"></script>
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById('navLinks');
+        var btn = document.querySelector('.menu-toggle');
+        navLinks.classList.toggle('active');
+        if (btn) btn.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+    }
+</script>
+
+</body>
+</html>
