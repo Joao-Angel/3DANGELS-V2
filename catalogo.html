@@ -24,7 +24,6 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Início</a></li>
             <li><a href="catalogo.html" class="active">Catálogo</a></li>
-            <li><a href="index.html#como-funciona">Como funciona</a></li>
             <li><a href="index.html#services">Serviços</a></li>
             <li><a href="orcamento.html">Orçamento</a></li>
             <li><a href="index.html#about">Sobre</a></li>
@@ -40,6 +39,8 @@
 <div class="catalogo-tabs">
     <button class="tab-btn active" onclick="trocarCategoria('utilidades', event)">Utilidades</button>
     <button class="tab-btn" onclick="trocarCategoria('decoracao', event)">Decoração / Geek</button>
+    <button class="tab-btn" onclick="trocarCategoria('personalizados', event)">Personalizados</button>
+
 </div>
 
 <div class="catalogo-grid">
@@ -160,14 +161,42 @@
             <div class="produto-preco">R$ 19,90</div>
             <button onclick="pedirProduto('Vaso Boneco - R$19,90')">Pedir no WhatsApp</button>
         </div>
-        <div class = "produto">
+    </div>
+
+    <div class="categoria" id="personalizados">
+
+        <div class="produto">
             <img src="img/catalogo/DOG_CHAVEIRO.jpeg">
-            <h3>Chaveiro Cachorro personalizado</h3>
-            <p>Chaveiro personalizado do seu pet.</p>
-            <div class="produto-preco">R$ 25,90</div>
+            <h3>Chaveiro — Cachorro</h3>
+            <p>Envie sua foto, nós criamos o chaveiro.</p>
+            <div class="produto-preco">Sob consulta</div>
             <button onclick="pedirProduto('Chaveiro Cachorro - R$25,90')">Pedir no WhatsApp</button>
         </div>
-
+    
+        <div class="produto">
+            <img src="img/catalogo/DOG2_CHAVEIRO.jpeg">
+            <h3>Chaveiro — Cachorro II</h3>
+            <p>Seu melhor amigo, sempre com você.</p>
+            <div class="produto-preco">Sob consulta</div>
+            <button onclick="pedirProduto('Chaveiro Cachorro - R$25,90')">Pedir no WhatsApp</button>
+        </div>
+    
+        <div class="produto">
+            <img src="img/catalogo/CAT_CHAVEIRO.jpeg">
+            <h3>Chaveiro — Gato</h3>
+            <p>Um mimo único feito a partir do seu pet.</p>
+            <div class="produto-preco">Sob consulta</div>
+            <button onclick="pedirProduto('Chaveiro Gato - R$25,90')">Pedir no WhatsApp</button>
+        </div>
+    
+        <div class="produto">
+            <img src="img/catalogo/CAT2_CHAVEIRO.jpeg">
+            <h3>Chaveiro — Gato II</h3>
+            <p>Personalizado com as feições do seu gato.</p>
+            <div class="produto-preco">Sob consulta</div>
+            <button onclick="pedirProduto('Chaveiro Gato - R$25,90')">Pedir no WhatsApp</button>
+        </div>
+    
     </div>
 </section>
 
