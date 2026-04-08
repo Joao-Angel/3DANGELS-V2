@@ -143,5 +143,62 @@
     }
 </script>
 
+<!-- Pop-up: campos obrigatórios -->
+<div id="popup-validacao" role="dialog" aria-modal="true" aria-labelledby="popup-val-titulo"
+  style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5);
+         z-index:9999; align-items:center; justify-content:center; padding:1rem;">
+  <div style="background:#fff; border-radius:12px; padding:2rem 1.75rem;
+              max-width:360px; width:100%;">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:1rem;">
+      <div style="width:36px; height:36px; border-radius:50%; background:#FAECE7;
+                  display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2a6 6 0 100 12A6 6 0 008 2zm0 3.5a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5A.75.75 0 018 5.5zm0 6a.875.875 0 110-1.75.875.875 0 010 1.75z" fill="#D85A30"/>
+        </svg>
+      </div>
+      <h2 id="popup-val-titulo" style="font-size:16px; font-weight:600; margin:0; color:#111;">
+        Campos obrigatórios
+      </h2>
+    </div>
+    <p style="font-size:14px; color:#555; margin:0 0 1rem; line-height:1.6;">
+      Por favor, preencha os campos abaixo antes de enviar:
+    </p>
+    <ul id="popup-campos-lista"
+      style="margin:0 0 1.25rem; padding:0; list-style:none; display:flex; flex-direction:column; gap:6px;">
+    </ul>
+    <button onclick="fecharPopup('popup-validacao')"
+      style="width:100%; padding:10px; background:#0e6380; color:#fff; border:none;
+             border-radius:8px; font-size:14px; font-weight:500; cursor:pointer;">
+      Entendido, vou preencher
+    </button>
+  </div>
+</div>
+
+<!-- Pop-up: sucesso -->
+<div id="popup-sucesso" role="dialog" aria-modal="true" aria-labelledby="popup-suc-titulo"
+  style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5);
+         z-index:9999; align-items:center; justify-content:center; padding:1rem;">
+  <div style="background:#fff; border-radius:12px; padding:2rem 1.75rem;
+              max-width:360px; width:100%; text-align:center;">
+    <div style="width:48px; height:48px; border-radius:50%; background:#EAF3DE;
+                display:flex; align-items:center; justify-content:center; margin:0 auto 1rem;">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <path d="M5 11.5l4.5 4.5 7.5-8" stroke="#3B6D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h2 id="popup-suc-titulo" style="font-size:16px; font-weight:600; margin:0 0 0.5rem; color:#111;">
+      Orçamento enviado!
+    </h2>
+    <p style="font-size:14px; color:#555; margin:0 0 1.25rem; line-height:1.6;">
+      Recebemos sua solicitação por e-mail e o WhatsApp foi aberto para você acompanhar em tempo real.
+    </p>
+    <button onclick="fecharPopup('popup-sucesso')"
+      style="width:100%; padding:10px; background:#0e6380; color:#fff; border:none;
+             border-radius:8px; font-size:14px; font-weight:500; cursor:pointer;">
+      Fechar
+    </button>
+  </div>
+</div>
+
 </body>
 </html>
